@@ -1,15 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Sedona Search Hotels</title>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header class="header">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#" class="nav__item">карта штата</a>
+        <a href="#" class="nav__item">информация</a>
+        <a href="#" class="nav__item">фото и видео</a>
+        <a href="#" class="nav__item">гостиницы</a>
+        <button class="btn btn--cancel"></button>
+      </nav>
+      <a href="#" class="logo"></a>
+      <!-- navigation -->
 
-    <!-- <script src="js/script.js"></script> -->
+      <!-- Navbar -->
+      <div class="navbar">
+        <button class="btn btn--open"></button>
+      </div>
+      <!-- navbar -->
 
-  </body>
+    </header>
+    <!-- header -->
+
+    <!-- Main-img -->
+    <div class="main-img">
+      <div class="main-img__text">
+        <svg class="svg-welcome"></svg>
+        <svg class="svg-text-tothegorgeous"></svg>
+        <svg class="svg-sedona"></svg>
+        <svg class="svg-because"></svg>
+      </div>
+    </div>
+    <!-- main-img -->
+
+    <h1>Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h2 class="title-like-h2">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
+
+    <!-- Reason-1 -->
+    <section class="reason">
+      <div class="reason__box">
+        <div class="reason-features__item">
+          <h3 class="reason-features__title">Настоящий городок</h3>
+          <span class="reason-features__number">&ndash; №1 &ndash;</span>
+          <p class="reason-features__info">Седона не атракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="reason__img">
+          <img src="img/.." alt="city">
+        </div>
+      </div>
+
+      <!-- Reason-features -->
+      <div class="reason-features">
+        <div class="reason-features__item">
+          <h3 class="reason-features__title"><span class="reason-features__icon icon-house"></span>Жилье</h3>
+          <span class="reason-features__info">Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
+        </div>
+        <div class="reason-features__item">
+          <h3 class="reason-features__title"><span class="reason-features__icon icon-price"></span>Сувениры</h3>
+          <span class="reason-features__info">Не только китайского, но и местного производства!</span>
+        </div>
+        <div class="reason-features__item">
+          <h3 class="reason-features__title"><span class="reason-features__icon icon-food"></span>Еда</h3>
+          <span class="reason-features__info">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</span>
+        </div>
+      </div>
+      <!-- reason-features -->
+
+    </section>
+    <!-- reason-1 -->
+
+    <!-- Reason-2 -->
+    <section class="reason">
+      <div class="reason__box">
+        <div class="reason-features__item">
+          <h3 class="reason-features__title">Там есть мост дьявола</h3>
+          <span class="reason-features__number">&ndash; №2 &ndash;</span>
+          <p class="reason-features__info">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <div class="reason__img">
+            <img src="img/.." alt="bridge">
+        </div>
+      </div>
+    </section>
+    <!-- reason-2 -->
+
+    <!-- Reason-3-4-5 -->
+    <div class="reason-features reason-features--other">
+      <div class="reason-features__item">
+        <h3 class="reason-features__title">Небольшая площадь</h3>
+        <span class="reason-features__number">&ndash; №3 &ndash;</span>
+        <p class="reason-features__info">Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="reason-features__item">
+        <h3 class="reason-features__title">Красивая дорога</h3>
+        <span class="reason-features__number">&ndash; №4 &ndash;</span>
+        <p class="reason-features__info">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="reason-features__item">
+        <h3 class="reason-features__title">Мало туристов</h3>
+        <span class="reason-features__number">&ndash; №5 &ndash;</span>
+        <p class="reason-features__info">Большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </div>
+    <!-- reason-3-4-5 -->
+
+    <!-- Hotel -->
+    <section class="hotel">
+      <h2 class="hotel__title">Заинтересовались?</h2>
+      <p class="hotel__info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="hotel-search__btn">Найти гостиницу</button>
+    </section>
+    <!-- hotel -->
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <!-- Map -->
+      <div class="map" id="map"></div>
+      <!-- map -->
+
+      <div class="footer__box">
+
+        <!-- Hashtag -->
+        <span class="hashtag">#visitsedona</span>
+        <!-- hashtag -->
+
+        <!-- Social -->
+        <div class="social">
+          <a href="#" class="social__item social__item--tw"></a>
+          <a href="#" class="social__item social__item--fb"></a>
+          <a href="#" class="social__item social__item--youtube"></a>
+        </div>
+        <!-- social -->
+
+        <!-- Design -->
+        <div class="design">
+          <a href="#" class="design__by">Разработано
+            <svg class="svg-htmlacademy"></svg>
+          </a>
+        </div>
+        <!-- design -->
+      </div>
+    </footer>
+  <!-- footer -->
+  </div>
+</body>
 </html>
