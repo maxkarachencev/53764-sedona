@@ -42,11 +42,12 @@
         <fieldset class="review-form__item">
           <legend class="review-form__title">Представьтесь, пожалуйста</legend>
           <label class="input-label" for="user-lastname">Фамилия</label>
-          <input class="input-text" type="text" name="lastname" id="user-lastname">
+          <input class="input-text" type="text" name="lastname" id="user-lastname" required>
           <label class="input-label" for="user-firstname">Имя</label>
-          <input class="input-text" type="text" name="firstname" id="user-firstname">
+          <input class="input-text" type="text" name="firstname" id="user-firstname" required>
           <label class="input-label" for="user-patronymic">Отчество</label>
-          <input class="input-text" type="text" name="patronymic" id="user-patronymic"></fieldset>
+          <input class="input-text" type="text" name="patronymic" id="user-patronymic">
+        </fieldset>
         <fieldset class="review-form__item">
           <legend class="review-form__title">Ваще общее впечатление</legend>
           <div class="radio-input">
@@ -69,7 +70,8 @@
             <div class="choose-quantity__increase"></div>
           </div>
           <label class="input-label" for="leaving-date">Дата отъезда:</label>
-          <input class="input-text" type="text" name="leaving" id="leaving-date" placeholder="28 июля 2015"></fieldset>
+          <input class="input-text" type="text" name="leaving" id="leaving-date" placeholder="28 июля 2015">
+        </fieldset>
         <fieldset class="review-form__item">
           <legend class="review-form__title">Кол-во путешественников</legend>
           <div class="choose-quantity">
@@ -80,7 +82,7 @@
           </div>
           <div class="review-form__traveler-card">
             <div class="review-form__traveler-card-num">
-              <span>№</span>
+              <div>№</div>
               <div>1</div>
             </div>
             <div class="user-info">
@@ -89,11 +91,12 @@
               <label class="input-label" for="traveler-name">Имя:</label>
               <input class="input-text" type="text" name="name" id="traveler-name" placeholder="14">
               <label class="input-label" for="traveler-patronymic">Отчество:</label>
-              <input class="input-text" type="text" name="patronymic" id="traveler-patronymic" placeholder="28 июля 2015"></div>
+              <input class="input-text" type="text" name="patronymic" id="traveler-patronymic" placeholder="28 июля 2015">
+            </div>
           </div>
           <div class="review-form__traveler-card">
             <div class="review-form__traveler-card-num">
-              <span>№</span>
+              <div>№</div>
               <div>2</div>
             </div>
             <div class="user-info">
@@ -102,7 +105,8 @@
               <label class="input-label" for="traveler-name-second">Имя:</label>
               <input class="input-text" type="text" name="name-second" id="traveler-name-second" placeholder="14">
               <label class="input-label" for="traveler-patronymic-second">Отчество:</label>
-              <input class="input-text" type="text" name="patronymic-second" id="traveler-patronymic-second" placeholder="28 июля 2015"></div>
+              <input class="input-text" type="text" name="patronymic-second" id="traveler-patronymic-second" placeholder="28 июля 2015">
+            </div>
           </div>
         </fieldset>
         <fieldset class="review-form__item">
@@ -120,21 +124,28 @@
           <legend class="review-form__title">Загрузите фотографии:</legend>
           <input class="input-file" type="file">
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
           <div class="review-form__downloaded-item">
-            <img src="http://placehold.it/70x70" alt=""></div>
+            <img src="http://placehold.it/70x70" alt="">
+          </div>
         </fieldset>
-        <a class="send-review__btn" href="#">Отправить отзыв</a>
+        <input class="button" type="submit" name="review" id="send-review" value="Отправить отзыв">
       </form>
     </section>
   </main>
