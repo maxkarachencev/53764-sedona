@@ -43,116 +43,116 @@
     </section>
     <section class="page-form">
       <form class="review-form" action="#" method="post">
-        <fieldset class="review-form__item-welcome">
-          <legend class="review-form__title-welcome">Представьтесь, пожалуйста</legend>
-          <label class="input-label__welcome" for="user-lastname">Фамилия</label>
-          <input class="input-text__welcome" type="text" name="lastname" id="user-lastname" required>
-          <label class="input-label__welcome" for="user-firstname">Имя</label>
-          <input class="input-text__welcome" type="text" name="firstname" id="user-firstname" required>
-          <label class="input-label__welcome" for="user-patronymic">Отчество</label>
-          <input class="input-text__welcome" type="text" name="patronymic" id="user-patronymic">
+        <fieldset class="review-welcome">
+          <legend class="review-welcome__title">Представьтесь, пожалуйста</legend>
+          <label class="review-welcome__label" for="user-lastname">Фамилия</label>
+          <input class="review-welcome__input-text" type="text" name="lastname" id="user-lastname" required>
+          <label class="review-welcome__label" for="user-firstname">Имя</label>
+          <input class="review-welcome__input-text" type="text" name="firstname" id="user-firstname" required>
+          <label class="review-welcome__label" for="user-patronymic">Отчество</label>
+          <input class="review-welcome__input-text" type="text" name="patronymic" id="user-patronymic">
         </fieldset>
-        <fieldset class="review-form__item-impression">
-          <legend class="review-form__title-impression">Ваще общее впечатление</legend>
-          <div class="radio-input__impression">
+        <fieldset class="review-impression">
+          <legend class="review-impression__title">Ваще общее впечатление</legend>
+          <div class="review-impression__radio-input">
             <input type="radio" name="opinion" id="positive">
             <label for="positive">Скорее положительное</label>
           </div>
-          <div class="radio-input__impression">
+          <div class="review-impression__radio-input">
             <input type="radio" name="opinion" id="negative">
             <label for="negative">Скорее отрицательное</label>
           </div>
         </fieldset>
-        <fieldset class="review-form__item-dates">
-          <legend class="review-form__title-dates">Даты вашей поездки</legend>
-          <label class="input-label__dates" for="arrival-date">Дата приезда:</label>
-          <input class="input-text__dates" type="text" name="arrival" id="arrival-date" placeholder="4 июля 2015">
-          <div class="choose-quantity">
-            <label class="input-label__dates" for="stay-dates">Длительность пребывания:</label>
-            <div class="choose-quantity__decrease"></div>
+        <fieldset class="review-dates">
+          <legend class="review-dates__title">Даты вашей поездки</legend>
+          <label class="review-dates__label" for="arrival-date">Дата приезда:</label>
+          <input class="review-dates__input-text" type="text" name="arrival" id="arrival-date" placeholder="4 июля 2015">
+          <div class="review-dates__choose-quantity">
+            <label class="review-dates__label" for="stay-dates">Длительность пребывания:</label>
+            <div class="review-dates__choose-quantity review-dates__choose-quantity--decrease"></div>
             <input class="input-text__dates" type="text" name="stay" id="stay-dates" placeholder="14">
-            <div class="choose-quantity__increase"></div>
+            <div class="review-dates__choose-quantity review-dates__choose-quantity--increase"></div>
           </div>
-          <label class="input-label__dates" for="leaving-date">Дата отъезда:</label>
-          <input class="input-text__dates" type="text" name="leaving" id="leaving-date" placeholder="28 июля 2015">
+          <label class="review-dates__label" for="leaving-date">Дата отъезда:</label>
+          <input class="review-dates__input-text" type="text" name="leaving" id="leaving-date" placeholder="28 июля 2015">
         </fieldset>
-        <fieldset class="review-form__item-quantity">
-          <legend class="review-form__title-quantity">Кол-во путешественников</legend>
-          <div class="choose-quantity">
-            <label class="input-label" for="arrival-date">Кол-во путешественников</label>
-            <div class="choose-quantity__decrease"></div>
-            <input class="input-text" type="text" name="arrival" id="arrival-date" placeholder="чел.">
-            <div class="choose-quantity__increase"></div>
+        <fieldset class="review-traveler">
+          <legend class="review-traveler__title">Кол-во путешественников</legend>
+          <div class="review-traveler__choose-quantity">
+            <label class="review-traveler__label" for="arrival-date">Кол-во путешественников</label>
+            <div class="review-traveler__choose-quantity review-traveler__choose-quantity--decrease"></div>
+            <input class="review-traveler__input-text" type="text" name="arrival" id="arrival-date" placeholder="чел.">
+            <div class="review-traveler__choose-quantity review-traveler__choose-quantity--increase"></div>
           </div>
-          <div class="review-form__traveler-card">
-            <div class="review-form__traveler-card-num">
+          <div class="review-traveler__traveler-card">
+            <div class="review-traveler__traveler-card-num">
               <div>№</div>
               <div>1</div>
             </div>
-            <div class="user-info">
-              <label class="input-label__user" for="traveler-lastname">Фамилия:</label>
-              <input class="input-text__user" type="text" name="lastname" id="traveler-lastname" placeholder="4 июля 2015">
-              <label class="input-label__user" for="traveler-name">Имя:</label>
-              <input class="input-text__user" type="text" name="name" id="traveler-name" placeholder="14">
-              <label class="input-label__user" for="traveler-patronymic">Отчество:</label>
-              <input class="input-text__user" type="text" name="patronymic" id="traveler-patronymic" placeholder="28 июля 2015">
+            <div class="review-traveler__user-info">
+              <label class="review-traveler__label" for="traveler-lastname">Фамилия:</label>
+              <input class="review-traveler__input-text" type="text" name="lastname" id="traveler-lastname" placeholder="4 июля 2015">
+              <label class="review-traveler__label" for="traveler-name">Имя:</label>
+              <input class="review-traveler__input-text" type="text" name="name" id="traveler-name" placeholder="14">
+              <label class="review-traveler__label" for="traveler-patronymic">Отчество:</label>
+              <input class="review-traveler__input-text" type="text" name="patronymic" id="traveler-patronymic" placeholder="28 июля 2015">
             </div>
           </div>
-          <div class="review-form__traveler-card">
-            <div class="review-form__traveler-card-num">
+          <div class="review-traveler__traveler-card">
+            <div class="review-traveler__traveler-card-num">
               <div>№</div>
               <div>2</div>
             </div>
-            <div class="user-info">
-              <label class="input-label__user" for="traveler-lastname-second">Фамилия:</label>
-              <input class="input-text__user" type="text" name="lastname-second" id="traveler-lastname-second" placeholder="4 июля 2015">
-              <label class="input-label__user" for="traveler-name-second">Имя:</label>
-              <input class="input-text__user" type="text" name="name-second" id="traveler-name-second" placeholder="14">
-              <label class="input-label__user" for="traveler-patronymic-second">Отчество:</label>
-              <input class="input-text__user" type="text" name="patronymic-second" id="traveler-patronymic-second" placeholder="28 июля 2015">
+            <div class="review-traveler__user-info">
+              <label class="review-traveler__label" for="traveler-lastname">Фамилия:</label>
+              <input class="review-traveler__input-text" type="text" name="lastname" id="traveler-lastname" placeholder="4 июля 2015">
+              <label class="review-traveler__label" for="traveler-name">Имя:</label>
+              <input class="review-traveler__input-text" type="text" name="name" id="traveler-name" placeholder="14">
+              <label class="review-traveler__label" for="traveler-patronymic">Отчество:</label>
+              <input class="review-traveler__input-text" type="text" name="patronymic" id="traveler-patronymic" placeholder="28 июля 2015">
             </div>
           </div>
         </fieldset>
-        <fieldset class="review-form__item-attraction">
-          <legend class="review-form__title-attraction">Посещенные достопримечательности</legend>
-          <input class="input-checkbox__attraction" type="checkbox" name="devils-bridge" id="bridge-of-devil">
-          <label class="input-label__attraction" for="bridge-of-devil">Мост Дьявола</label>
-          <input class="input-checkbox__attraction" type="checkbox" name="slide-rock-state-park" id="slide-park">
-          <label class="input-label__attraction" for="slide-park">Слайд&ndash;парк</label>
-          <input class="input-checkbox__attraction" type="checkbox" name="mountain-bell" id="bell-mountain">
-          <label class="input-label__attraction" for="bell-mountain">Гора&ndash;Колокол</label>
-          <input class="input-checkbox__attraction" type="checkbox" name="red-mountains" id="mountains-red">
-          <label class="input-label__attraction" for="mountains-red">Красные скалы</label>
+        <fieldset class="review-attraction">
+          <legend class="review-attraction__title">Посещенные достопримечательности</legend>
+          <input class="review-attraction__input-checkbox" type="checkbox" name="devils-bridge" id="bridge-of-devil">
+          <label class="review-attraction__label" for="bridge-of-devil">Мост Дьявола</label>
+          <input class="review-attraction__input-checkbox" type="checkbox" name="slide-rock-state-park" id="slide-park">
+          <label class="review-attraction__label" for="slide-park">Слайд&ndash;парк</label>
+          <input class="review-attraction__input-checkbox" type="checkbox" name="mountain-bell" id="bell-mountain">
+          <label class="review-attraction__label" for="bell-mountain">Гора&ndash;Колокол</label>
+          <input class="review-attraction__input-checkbox" type="checkbox" name="red-mountains" id="mountains-red">
+          <label class="review-attraction__label" for="mountains-red">Красные скалы</label>
         </fieldset>
-        <fieldset class="review-form__item-photo">
-          <legend class="review-form__title-photo">Загрузите фотографии:</legend>
-          <input class="input-file__photo" type="file">
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+        <fieldset class="review-photo">
+          <legend class="review-photo__title">Загрузите фотографии:</legend>
+          <input class="review-photo__input-file" type="file">
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
-          <div class="review-form__uploaded-item">
-            <button class="uploaded-item__btn--cancel"></button>
+          <div class="review-photo__uploaded-item">
+            <button class="review-photo__uploaded-item-btn--delete"></button>
             <img src="http://placehold.it/70x70" alt="">
           </div>
         </fieldset>
@@ -163,9 +163,9 @@
   <footer class="page-footer">
     <div class="hashtag">#visitsedona</div>
     <div class="socials">
-      <a class="socials__link socials__link-tw"><img src="http://placehold.it/" alt="twitter"></a>
-      <a class="socials__link socials__link-fb"><img src="http://placehold.it/" alt="facebook"></a>
-      <a class="socials__link socials__link socials__link-youtube"><img src="http://placehold.it/" alt="youtube"></a>
+      <a class="socials__link"><img src="http://placehold.it/" alt="twitter"></a>
+      <a class="socials__link"><img src="http://placehold.it/" alt="facebook"></a>
+      <a class="socials__link"><img src="http://placehold.it/" alt="youtube"></a>
     </div>
   </footer>
 </body>
