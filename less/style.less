@@ -1,0 +1,334 @@
+ @fontMain: 14px;
+ @colorBlueMain: #81b3d2;
+
+ .mixin-fontBold () {
+   font-weight: bold;
+ }
+ 
+ .mixin-listClear () {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+ 
+ 
+ .mixin-textOut () {
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+ }
+ 
+ @font-face {
+   font-family: "PTSans";
+   src: url("../fonts/PTSansRegular.eot");
+   src: url("../fonts/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/PTSansRegular.woff") format("woff"),
+   url("../fonts/PTSansRegular.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+ }
+ 
+ @font-face {
+   font-family: "PTSans";
+   src: url("../fonts/PTSansItalic.eot");
+   src: url("../fonts/PTSansItalic.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/PTSansItalic.woff") format("woff"),
+   url("../fonts/PTSansItalic.ttf") format("truetype");
+   font-style: italic;
+   font-weight: normal;
+ }
+ 
+ @font-face {
+   font-family: "PTSans";
+   src: url("../fonts/PTSansBold.eot");
+   src: url("../fonts/PTSansBold.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/PTSansBold.woff") format("woff"),
+   url("../fonts/PTSansBold.ttf") format("truetype");
+   font-style: normal;
+   font-weight: bold;
+ }
+
+body {
+   width: 300px + 20;
+   margin: 0;
+   padding: 0;
+   font-family: "PTSansRegular", Arial, sans-serif;
+   text-transform: uppercase;
+ }
+
+  .clearfix::before,
+ .clearfix::after {
+   content: "";
+   display: table;
+ }
+ .clearfix::after { clear: both; }
+ 
+ .page-header {
+   position: relative;
+   padding-bottom: 17px;
+ }
+ 
+ .navigation {
+   position: relative;
+   margin-bottom: 17px;
+ 
+   &__list {
+     .mixin-listClear;
+     font-size: 18px;
+     line-height: 40px;
+     background: @colorBlueMain;
+     }
+ 
+   &__item {
+     text-align: center;
+     border-top: 1px solid #9ac2db;
+     border-bottom: 1px solid #678fa8;
+ 
+     &:first-of-type {
+       border-top: 0;
+     }
+     &:last-of-type {
+       border-bottom: 0;
+       box-shadow: inset 0px -6px 26px -17px #000;
+     }
+   }
+ 
+   &__link {
+     display: inline-block;
+     padding: 7px 0;
+     text-align: center;
+     color: #fff;
+     font-weight: 700;
+     text-decoration: none;
+     vertical-align: top;
+   }
+ }
+
+  .main-logo {
+    height: 55px;
+
+    text-align: center;
+
+    background: lighten(#000, 100%);
+  }
+
+  .main-logo img {
+    position: relative;
+    width: 140px;
+    height: 70px;
+    z-index: 2;
+  }
+
+ .close-icon {
+   position: absolute;
+   top: 17px;
+   right: 20px;
+   width: 23px;
+   height: 22px;
+   .mixin-textOut;
+   background: url("../img/close-icon.png") no-repeat;
+   cursor: pointer;
+ }
+
+ .page-header__navigation-toggle {
+   float: right;
+   width: 23px;
+   padding-right: 20px;
+   height: 22px;
+   cursor: pointer;
+ }
+
+ .page-content__intro {
+   height: 390px;
+   .mixin-textOut;
+   background: url("../img/page-content__intro.jpg") no-repeat;
+ }
+ 
+ .page-content__description {
+   padding: 19px 20px;
+   line-height: 26px;
+   text-align: center;
+ 
+   &__description-title {
+     .mixin-fontBold;
+     font-size: 18px;
+   }
+ }
+ 
+ .page-content__description-text {
+   font-size: 14px;
+ }
+
+ .features-item {
+   color: #333;
+   background: #eee;
+ 
+   &__intro{
+     padding: 48px 20px 26px 20px;
+     text-align: center;
+     border-bottom: 1px solid #e6e6e6;
+ 
+     &--active {
+       color: #fff;
+       background: $colorBlueMain;
+       border: none;
+     }
+   }
+ 
+   &__title {
+     margin-bottom: 21px;
+     font-size: 21px;
+     line-height: 10px;
+     font-weight: bold;
+   }
+ 
+   &__num {
+     position: relative;
+     display: inline-block;
+     width: 25px;
+     padding: 0 14px;
+ 
+     &::before,
+     &::after {
+       content: "";
+       position: absolute;
+       top: 50%;
+       width: 10px;
+       border-bottom: 1px solid #333;
+     }
+ 
+     &::before {
+       left: 0;
+     }
+ 
+     &::after {
+       right: 0;
+     }
+ 
+     &--active::before,
+     &--active::after {
+       border-color: #fff;
+     }
+   }
+
+    &__image-wrapper {
+     width: 320px;
+     min-height: 256px;
+     .mixin-textOut;
+   }
+
+    &__advantages {
+     padding: 45px 20px 38px 70px;
+   }
+ 
+   &__advantages-wrapper {
+     position: relative;
+     margin-bottom: 33px;
+ 
+     &:last-child {
+       margin-bottom: 0;
+     }
+ 
+
+   }
+ 
+   &__advantages-title {
+     margin-bottom: 20px;
+     font-size: 21px;
+     line-height: 15px;
+     .mixin-fontBold;
+   }
+ 
+   &__advantages-text {
+     font-size: @fontMain;
+   }
+ }
+
+  .search-hotel {
+   padding: 28px 20px;
+   text-align: center;
+ }
+ 
+ .search-hotel__title {
+   margin-bottom: 20px;
+   font-size: 21px;
+   line-height: 26px;
+   .mixin-fontBold;
+ }
+ 
+ .search-hotel__text {
+   margin-bottom: 33px;
+   font-size: @fontMain;
+   line-height: 24px;
+ }
+ 
+ .search-hotel__btn {
+   display: block;
+   margin-bottom: 19px;
+   padding: 16px 0;
+   width: 100%;
+   .mixin-fontBold;
+   font-size: 21px;
+   line-height: 26px;
+   color: #fff;
+   background: @colorBlueMain;
+   outline: none;
+   border: none;
+   text-transform: uppercase;
+   cursor: pointer;
+ }
+ 
+ .search-hotel__map {
+   height: 350px;
+   .mixin-textOut;
+   background: url("../img/search-hotel__map.jpg") no-repeat;
+ }
+
+  .page-footer {
+   padding-top: 36px;
+   text-align: center;
+ }
+ 
+ .hashtag {
+   margin-bottom: 30px;
+   .mixin-fontBold;
+   font-size: 21px;
+   line-height: 26px;
+ }
+
+  .socials {
+   margin-bottom: 45px;
+   font-size: 0;
+ }
+ 
+  .socials__link {
+   display: inline-block;
+   position: relative;
+   width: 47px;
+   height: 47px;
+   margin-right: 6px;
+   .mixin-textOut;
+   background-color: @colorBlueMain;
+   background-repeat: no-repeat;
+   background-position: center;
+   vertical-align: top;
+   cursor: pointer;
+ }
+
+ .socials__link img {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  margin:0 auto;
+ }
+
+  .copyright::after {
+   content: "";
+   display: inline-block;
+   width: 27px;
+   height: 34px;
+   margin-left: 12px;
+   background: url("../img/logo-academy.png") no-repeat;
+   vertical-align: middle;
+ }
+
