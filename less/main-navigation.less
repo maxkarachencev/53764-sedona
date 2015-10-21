@@ -1,0 +1,70 @@
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+
+  &__item {
+  background: @color-blue;
+  padding: 7px 0;
+  border-top: 1px solid #678fa8;
+  border-bottom: 1px solid #9ac2db;
+  text-align: center;
+  @media (min-width: @screen-tablet) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    padding: 14px 0;
+    background: none;
+    border: none;
+    }
+  }
+  
+  &__item:nth-of-type(2){
+  @media (min-width: @screen-tablet) {
+    margin-right: 20%;
+    }
+  }
+
+  &__item:first-of-type {
+    border-top: none;
+  }
+  
+  &__item:last-of-type {
+    border-bottom: none;
+    box-shadow: inset 0px -7px 10px -7px rgba(0,0,0,.35);
+    @media (min-width: @screen-tablet) {
+    box-shadow: none;
+    }
+  }
+  
+  &__link {
+    display: block;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    @media (min-width: @screen-tablet) {
+    display: inline;
+    color: #000;
+    font-size: 14px;
+    line-height: 26px;
+    }
+  }
+}
+
+.main-nav-btn {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  right: 20px;
+  top: 17px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: url("http://placehold.it/138x70/");
+  @media (min-width: @screen-tablet) {
+    display: none;
+    }
+}

@@ -1,0 +1,59 @@
+.reasons-block {
+  background: #eee;
+    @media (min-width: @screen-tablet) {
+    font-size: 0;
+  }
+
+  &__item {
+    padding: 30px 10px 20px;
+    margin: 0 20px;
+    background: #eee;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;
+    @media (min-width: @screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 33.3%;
+    min-height: 256px;
+    padding: 45px 0;
+    margin: 0;
+    text-align: center;
+    border: none;
+    }
+  }
+
+  &__item:last-of-type {
+    border: none;
+  }
+
+  &__title {
+    .mixin-title;
+    margin-bottom: 10px;
+    @media (min-width: @screen-tablet) and (max-width: 1199px) {
+      font-size: 21px;
+      padding: 0 28%;
+    }
+    @media (min-width: @screen-desktop) {
+      padding: 0 14%;
+    }
+  }
+
+  &__num {
+    .mixin-text;
+    margin-bottom: 15px;
+    @media (min-width: @screen-tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    .mixin-text;
+    @media (min-width: @screen-tablet) and (max-width: @screen-tablet) {
+      padding: 0 18%;
+    }
+    @media (min-width: @screen-desktop) {
+      padding: 0 14%;
+    }
+  }
+}

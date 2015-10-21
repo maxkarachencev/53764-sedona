@@ -1,0 +1,50 @@
+.features {
+  padding: 35px 0 20px;
+  @media (min-width: @screen-tablet) {
+    font-size: 0;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    padding: 5px 40px 25px 70px;
+    @media (min-width: @screen-tablet) {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 33.3%;
+    min-height: 330px;
+    padding: 160px 0 65px;
+    text-align: center;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    @media (min-width: @screen-tablet) {
+      left: 50%;
+      top: 60px;
+      transform: translate(-50%, 0px);
+    }
+  }
+
+  &__title {
+    .mixin-title;
+    margin-bottom: 12px;
+    @media (min-width: @screen-tablet) {
+      font-size: 21px;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__text {
+    .mixin-text;
+    @media (min-width: @screen-tablet) and (max-width: 1199px) {
+      padding: 0 19%;
+    }
+    @media (min-width: @screen-desktop) {
+      padding: 0 14%;
+    }
+  }
+}
